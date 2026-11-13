@@ -1,0 +1,27 @@
+# Editor Configuration — Engram Repository
+# Formatting rules for this knowledge base itself (Markdown, YAML, shell scripts).
+# This is separate from standards/coding/.editorconfig, which is the master baseline
+# for copying into new projects.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.md]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false
+
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
+
+[*.sh]
+indent_style = space
+indent_size = 2

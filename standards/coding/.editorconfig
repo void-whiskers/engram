@@ -1,0 +1,97 @@
+# Editor Configuration
+# Master baseline for all projects. Copy to project root when starting a new project.
+# Projects may override individual values locally.
+# This file is the machine-readable complement to the coding standards documents
+# in this directory.
+
+root = true
+
+# ─── Universal defaults ──────────────────────────────────────────────────────
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 88
+
+# ─── JavaScript / TypeScript ─────────────────────────────────────────────────
+[*.{js,mjs,cjs,jsx,ts,tsx,mts,cts}]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# ─── Web templates ───────────────────────────────────────────────────────────
+[*.{html,htm,vue,svelte}]
+indent_style = space
+indent_size = 2
+
+# ─── CSS / SCSS / Less ───────────────────────────────────────────────────────
+[*.{css,scss,sass,less}]
+indent_style = space
+indent_size = 2
+
+# ─── Data formats ────────────────────────────────────────────────────────────
+[*.{json,jsonc,json5}]
+indent_style = space
+indent_size = 2
+
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
+
+[*.toml]
+indent_style = space
+indent_size = 4
+
+# ─── Shell ───────────────────────────────────────────────────────────────────
+[*.{sh,bash,zsh}]
+indent_style = space
+indent_size = 2
+
+# ─── Infrastructure / Config ─────────────────────────────────────────────────
+[*.{tf,tfvars}]
+indent_style = space
+indent_size = 2
+
+[*.{dockerfile,Dockerfile}]
+indent_style = space
+indent_size = 4
+
+# ─── Markup / Docs ───────────────────────────────────────────────────────────
+[*.{md,mdx}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false
+
+[*.rst]
+indent_style = space
+indent_size = 3
+
+# ─── Rust ────────────────────────────────────────────────────────────────────
+[*.rs]
+indent_style = space
+indent_size = 4
+max_line_length = 100
+
+# ─── Go ──────────────────────────────────────────────────────────────────────
+[*.go]
+indent_style = tab
+indent_size = 4
+
+# ─── Java / Kotlin ───────────────────────────────────────────────────────────
+[*.{java,kt,kts}]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# ─── Makefiles (must use tabs) ───────────────────────────────────────────────
+[{Makefile,makefile,GNUmakefile,*.mk}]
+indent_style = tab
+indent_size = 4
