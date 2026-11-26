@@ -1,0 +1,4 @@
+# GitHub Linguist leaves Markdown out of a repository's language statistics by
+# default, so the validator scripts alone would make this repository show as
+# Python. Engram is Markdown, so count it.
+*.md linguist-detectable
